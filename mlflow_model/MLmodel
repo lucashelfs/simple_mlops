@@ -1,0 +1,20 @@
+artifact_path: model
+databricks_runtime: 13.3.x-cpu-ml-scala2.12
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.1.1
+mlflow_version: 2.5.0
+model_uuid: 16980f64af86495b9b9ed29826aef630
+run_id: 4f7f7ec530f64c0d9f3ce7ad0c505635
+utc_time_created: '2023-11-30 21:54:24.912401'
